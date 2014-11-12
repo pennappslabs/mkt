@@ -1,4 +1,14 @@
+var SearchBar = React.createClass({
+    render: function() {
+        return (
+          <div id="search-bar">
+            Q: <input type="text" name="query" />
+          </div>
+        );
+    }
+});
+
 React.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('example')
+    <SearchBar />,
+    document.getElementById('container')
 );
