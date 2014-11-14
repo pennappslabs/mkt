@@ -1,22 +1,60 @@
-.main {
+
+.home {
 	font-family: "Helvetica Neue";
+	display: inline-flex;
+	width: 100%;
 }
 
-#tagBar {
-   width: 245px;
-   height: 490px;
-   position: fixed;
-   left: 0px;
-   top: 150px;
-   border: 1px solid rgb(242, 242, 242);
-   background-color: rgb(51,181,229);
+
+.tagBar {
+	width: 165px;
+	height: 490px;
+	left: 15px;
+	border: 1px solid rgb(242, 242, 242);
+	background-color: rgb(51,181,229);
+}
+
+@media(max-width: 466px) {
+   .home {
+   	display: block;
+   }
+   .tagBar {
+   	width: 100%;
+   }
 }
 
 .tagBarText {
-   font-size: 14px;
-   color: white;
-   letter-spacing: .8px;
-   text-align: center;
-   line-height: 25px;
-   margin-top: 12%;
+	font-size: 14px;
+	color: white;
+	letter-spacing: .8px;
+	text-align: center;
+	line-height: 25px;
+	margin-top: 12%;
 }
+
+
+.searchFeedStack {
+	width: 100%;
+	margin-top: -19px;
+}
+
+.search {
+	background-color: gray;
+}
+
+.feed {
+	background-color: green;
+}
+
+.titlePost {
+	margin-top: 18px;
+	padding-top: 55px;
+	padding-bottom: 55px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.postPageTitle {
+	text-align: center;
+}
+
