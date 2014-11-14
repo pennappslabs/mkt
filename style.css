@@ -1,0 +1,22 @@
+.main {
+	font-family: "Helvetica Neue";
+}
+
+#tagBar {
+   width: 245px;
+   height: 490px;
+   position: fixed;
+   left: 0px;
+   top: 150px;
+   border: 1px solid rgb(242, 242, 242);
+   background-color: rgb(51,181,229);
+}
+
+.tagBarText {
+   font-size: 14px;
+   color: white;
+   letter-spacing: .8px;
+   text-align: center;
+   line-height: 25px;
+   margin-top: 12%;
+}
