@@ -1,3 +1,4 @@
+// 
 var SearchBar = React.createClass({displayName: 'SearchBar',
     render: function() {
         return (
@@ -10,5 +11,20 @@ var SearchBar = React.createClass({displayName: 'SearchBar',
 
 React.render(
     React.createElement(SearchBar, null),
-    document.getElementById('container')
+    document.getElementById('searchObj')
+);
+
+var TagBar = React.createClass({displayName: 'TagBar',
+    render: function() {
+        return (
+          React.createElement("div", {id : "tag-bar"}, 
+          		React.createElement("div", {class : "tagBarText"})
+          	) 
+        );
+    }
+});
+
+React.render(
+    React.createElement(TagBar, null),
+    document.getElementById('tagBarObj')
 );

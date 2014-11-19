@@ -1,3 +1,4 @@
+/*        main        */
 .main {
 	font-family: "Myriad Set Pro","Lucida Grande","Helvetica Neue",
 	             "Helvetica","Arial","Verdana","sans-serif";
@@ -7,14 +8,17 @@
 	text-align: center;
 }
 
-.listSection {
-	font-family: "Helvetica Neue";
-	display: inline-flex;
-	width: 100%;
+
+.homeTop {
+	margin-top: 18px;
+	padding-top: 55px;
+	padding-bottom: 85px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.tagBar {
-	/*width: 165px;*/
+/*       tag bar       */
+#tag-bar {
 	height: 490px;
 	left: 15px;
 	border: 1px solid rgb(242, 242, 242);
@@ -30,27 +34,34 @@
 	margin-top: 12%;
 }
 
-
+/*       search       */
 .searchFeedStack {
-	width: 100%;
 	margin-top: -19px;
 }
 
 .search {
 	background-color: gray;
+	width: 100%;
+	text-align: center;
+	margin-left: -9%;
+}
+
+/*       listings      */
+.listSection {
+	font-family: "Helvetica Neue";
+	display: inline-flex;
+	width: 100%;
 }
 
 .feed {
 	background-color: green;
+	width: 900px;
 }
 
-.homeTop {
-	margin-top: 18px;
-	padding-top: 55px;
-	padding-bottom: 55px;
-	margin-left: auto;
-	margin-right: auto;
-}
+
+
+
+
 
 
 
@@ -65,7 +76,6 @@
 .col {
 	display: block;
 	float:left;
-	margin: 1% 0 1% 1.6%;
 }
 .col:first-child { margin-left: 0; }
 
@@ -101,6 +111,9 @@
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
 @media only screen and (max-width: 713px) {
+	.searchFeedStack {
+	   width: 100%;
+    }
 	.span_3_of_3 {
 		width: 100%; 
 	}
@@ -111,3 +124,9 @@
 		width: 100%;
 	}
 }
+
+
+
+
+
+
